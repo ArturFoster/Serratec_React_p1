@@ -7,6 +7,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [check, setCheck] = useState(false);
 
   function addCount() {
     setCount((count) => count + 1);
@@ -14,6 +15,7 @@ function App() {
 
   useEffect(() => {
     console.clear();
+    console.log(check);
     console.log(count + "- Email: " + email);
     console.log(count + "- Senha: " + password);
   }, [count]);
@@ -50,7 +52,7 @@ function App() {
             <a href="https://www.netflix.com/br/LoginHelp">Esqueceu a senha</a>
 
             <div className={styles.checkbox}>
-              <input type="checkbox" />
+              <input type="checkbox" onChange={() => setCheck(true)} />
               <p>Lembre-se de mim</p>
             </div>
 
