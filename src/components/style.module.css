@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .body{
     display:flex;
     flex-direction: column;
@@ -45,6 +49,7 @@
 }
 
 .checkbox p{
+    margin-top: 5%;
     width: 150px;
 }
 
@@ -66,9 +71,36 @@ button{
     color: white;
 }
 
+p{
+    margin: 2%;
+}
 
 a{
     color: white;
+}
+footer{
+    color: gray;
+    height: 200px;
+    margin-top: 15%;
+    background-color: rgb(0,0, 0);
+    z-index: 2;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+footer p{
+    margin-left: 20%;
+    text-align: start;
+}
+
+.captcha{
+    width: 80%;
+    text-align: center;
+    font-size: small;
+    color: gray;
+    text-size-adjust: 5px;
+    margin:30px;
 }
 
 .entrar2{
