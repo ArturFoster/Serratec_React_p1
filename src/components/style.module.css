@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: rgba(0, 0, 0, 0.650);
 }
 
 .alinhainterno {
@@ -53,22 +53,43 @@
     width: 150px;
 }
 
+div h1{
+   padding: 5%;
+}
+
 input{
     color: aliceblue;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgb(15, 15, 15);
+    
+    border-style: hidden;
+    border-color: gray;
     border-radius: 5px;
+    
     margin: 3%;
-    padding:15px;
+    padding:20px;
     width: 65%;
 }
 
 button{
-    border-radius: 5px;
-    margin: 1%;
-    padding: 10px;
-    width: 72%;
     background-color: rgb(180, 0, 0);
+    font-weight: bold;
     color: white;
+
+    border-style: hidden;
+    
+    margin: 1%;
+    padding: 13px;
+    width: 72%;
+    border-radius: 5px;
+    
+
+}
+
+button:hover{
+    transition: ease-in;
+    transition: ease-out;
+    transition-duration:125ms;
+    background-color: rgb(211, 28, 28);
 }
 
 p{
@@ -105,6 +126,9 @@ footer p{
 
 .entrar2{
     background-color: gray;
+}
+.entrar2:hover{
+    background-color: rgb(165, 165, 165);
 }
 
 .netflixlogo {

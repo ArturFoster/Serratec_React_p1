@@ -28,7 +28,7 @@ function App() {
         <div className={styles.limitador}>
           <div className={styles.netflixlogo}></div>
           <div className={styles.fundobase}>
-            <h1>Login</h1>
+            <h1>Entrar</h1>
             <input
               onChange={(e) => setEmail(e.target.value)}
               type="text"
