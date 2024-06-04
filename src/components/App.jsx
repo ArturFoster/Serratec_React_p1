@@ -7,17 +7,30 @@ function App() {
   const [count, setCount] = useState(0);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [check, setCheck] = useState(false);
+  const [valida, setValida] = useState(false);
 
   function addCount() {
     setCount((count) => count + 1);
   }
 
   useEffect(() => {
+    if (email == 'artur@mail.com' && password == '1234')
+      setValida(true);
+    else
+      setValida(false);
+  }, [email, password]);
+
+  useEffect(() => {
     console.clear();
-    console.log(check);
-    console.log(count + "- Email: " + email);
-    console.log(count + "- Senha: " + password);
+    if (valida == true) {
+      alert('Email e senha válidos.')
+      console.log("- Email: " + email);
+      console.log("- Senha: " + password);
+    }
+    else
+      console.log('Email e/ou senha inválidos');
+
+    console.log('Tentativas: ' + count);
   }, [count]);
 
   return (
@@ -52,7 +65,7 @@ function App() {
             <a href="https://www.netflix.com/br/LoginHelp">Esqueceu a senha</a>
 
             <div className={styles.checkbox}>
-              <input type="checkbox" onChange={() => setCheck(true)} />
+              <input type="checkbox" />
               <p>Lembre-se de mim</p>
             </div>
 
